@@ -24,56 +24,110 @@ The application is built with **React Native** and the **Expo** framework, using
 
 ## System Diagram
 
+
+
 ```mermaid
 
-graph TD
+
+
+flowchart TD
+
+
 
     subgraph "App Structure"
 
+
+
         A[Expo Router] --> B{Auth Flow};
+
+
 
         A --> C{Main App};
 
+
+
         
 
+
+
         B --> D[(Login Screen)];
+
+
 
         B --> E[(Signup Screen)];
 
 
 
+
+
+
+
         C --> F(Tab Navigator);
+
+
 
         F --> G[Activity Screen];
 
+
+
         F --> H[Measure Screen];
+
+
 
         F --> I[Notification Screen];
 
+
+
         F --> J[Profile Screen];
+
+
 
         F --> K[View Screen];
 
+
+
     end
+
+
+
+
 
 
 
     subgraph "UI Layer"
 
+
+
         L[React Native Paper Components]
+
+
 
     end
 
 
 
+
+
+
+
     G -- uses --> L;
+
+
 
     H -- uses --> L;
 
+
+
     I -- uses --> L;
+
+
 
     J -- uses --> L;
 
+
+
     K -- uses --> L;
+
+
 
 ```
